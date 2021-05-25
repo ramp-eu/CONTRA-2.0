@@ -1,4 +1,4 @@
-# IoT Agent for RS232 and MODBUS TCP protocol
+# Depalletization IoT Agent for RS232 and MODBUS TCP protocol
 ### ROSE-AP component supporting warehousing and production palletization processess
 
 [![License: MIT](https://img.shields.io/github/license/ramp-eu/TTE.project1.svg)](https://opensource.org/licenses/MIT)
@@ -16,6 +16,7 @@ This project is part of [DIH^2](http://www.dih-squared.eu/). For more informatio
 -   [Install](#install)
 -   [Usage](#usage)
 -   [API](#api)
+-   [Architecture](#architecture)
 -   [Testing](#testing)
 -   [License](#license)
 
