@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "type": {
+        "type": "string"
+      },
+      "startTime": {
+        "type": "string"
+      },
+      "boardCount": {
+        "type": "integer"
+      },
+      "endTime": {
+        "type": "string"
+      },
+      "isRunning": {
+        "type": "boolean"
+      }
+
+    },
+    "required": [
+      "id",
+      "type",
+      "startTime",
+      "boardCount",
+      "endTime",
+      "isRunning"
+    ]
+  }
