@@ -2,6 +2,7 @@
 ### ROSE-AP component supporting warehousing and production palletization processess
 
 [![License: MIT](https://img.shields.io/github/license/ramp-eu/TTE.project1.svg)](https://opensource.org/licenses/MIT)
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/4899/badge)](https://bestpractices.coreinfrastructure.org/projects/4899)
 
 An IoT Agent for RS232 and MODBUS TCP protocol is designed to be a bridge between RS232 ASCII based custom protocol or MODBUS TCP protocol and the [NGSI](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/Fiware/specifications/master/OpenAPI/ngsiv2/ngsiv2-openapi.json) interface of a context broker. The agent is customized for supporting wareohusing and production palletization processess.
 
