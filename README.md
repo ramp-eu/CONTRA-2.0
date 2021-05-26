@@ -22,23 +22,23 @@ This project is part of [DIH^2](http://www.dih-squared.eu/). For more informatio
 -   [License](#license)
 
 ## Background
-This IoT Agent is designed to be a bridge between HTTP, ASCII based protocols or [MODBUS TCP protocol](https://www.modbus.org/docs/Modbus_Messaging_Implementation_Guide_V1_0b.pdf) and the FIWARE NGSI standard used in FIWARE. This project is based in the Node.js IoT Agent library. More information about the IoT Agents can be found within the library's [GitHub repository](https://github.com/telefonicaid/iotagent-node-lib).
-
 The agent is designed to enable IoT capabilities for legacy production and warehousing machines supporting old-fashioned (but still popular) serial communication using RS232 connection and ASCII based data protocols. Additionally it supports MODBUS TCP protocol to retreive data form connected machines.  
 
 The agent was tested on two machines: 
 * KUKA KR150 robot using RS232 serial connection with additional serial-to-ethernet hardware gateway converter
 * automated stacker using PLC controller connected to an ethernet, network supporitng MODBUS TCP protocol
 
+This IoT Agent is designed to be a bridge between HTTP, ASCII based protocols or [MODBUS TCP protocol](https://www.modbus.org/docs/Modbus_Messaging_Implementation_Guide_V1_0b.pdf) and the FIWARE NGSI standard used in FIWARE. This project is based in the Node.js IoT Agent library. More information about the IoT Agents can be found within the library's [GitHub repository](https://github.com/telefonicaid/iotagent-node-lib).
+
 ### Smart factory services
 Currently, the agent is customized to support warehousing and production palletization processess including:
-* depalletization - is a process of removing materials from pallets or ordered pile
-* palletization (stacking) - is a proces of arranging materials on pallets or in an ordered pile
+* **depalletization** - is a process of removing materials from pallets or ordered pile
+* **palletization (stacking)** - is a proces of arranging materials on pallets or in an ordered pile
 
 Proposed solution allows access to palletization processess performance data in an automated manner. The new smart factory services include:
-1. Real time production process monitoring – visualisation of machines’ current status, i.e. uptime, number of cycles completed, time to complete, etc.
-2. Early warnings for production station status (monitoring) – sending notifications to shop-floor workers when the robot’s task is near to completion so there is no idling time
-3. Autmatiozation of machines programs configuration 
+1. **Real time production process monitoring** – visualisation of machines’ current status, i.e. uptime, number of cycles completed, time to complete, etc.
+2. **Early warnings for production station status (monitoring)** – sending notifications to shop-floor workers when the robot’s task is near to completion so there is no idling time
+3. **Automatization of machines configuration** 
 
 In order to provide new business services, the CONTRA system will be extended with additional modules for
 production machine reporting data visualization and analysis (statistics in a form of tables and charts). Moreover,
@@ -48,9 +48,9 @@ predefined, static parameters values (e.g. machine performance parameters).
 ### Use Case description (depalletization)
 
 1. A shop-floor worker uses WMS/MES system mobile appplication to scan palette barcode to initiate depalletization process (e.g. [CONTRA](https://contra.itti.com.pl/)) and configure machines accrodingly
-2. A robot operator confirms received configuration and starts a robot
-3. A robot begins depalletization
-4. Performance data is 
+2. A robot operator confirms received configuration (e.g. palette ID, wood plan height) and starts a robot
+3. A robot begins depalletization process according to selected program
+4. Depalletization performance data is 
 5. he Orion Context Broker receives context data update (scanned, unique paletted ID and material dimmensions)
 
 use-case
@@ -90,6 +90,13 @@ Information about how to install the Contra 2.0 can be found at the correspondin
 
 A `Dockerfile` is also available for your use - further information can be found [here](docker/README.md)
 
+## API
+
+Information about the API of the component can be found in the [API documentation](https://github.com/itti-pl/depalletization-agent-rose-ap/blob/main/api/docs/api.md)
+
+## Architecture
+
+A description of the architecture can be found in the [Architecture documentation](https://github.com/itti-pl/depalletization-agent-rose-ap/blob/main/api/docs/architecture.md)
 
 ## Usage
 
