@@ -47,6 +47,11 @@ production machine reporting data visualization and analysis (statistics in a fo
 the CONTRA production planning module could be extended to take into account live reporting data rather than
 predefined, static parameters values (e.g. machine performance parameters).
 
+<img width="1195" alt="Zrzut ekranu 2021-05-26 o 12 04 49" src="https://user-images.githubusercontent.com/46000321/119642076-a1eca600-be1a-11eb-894a-f88421638e40.png">
+
+
+
+
 ### Use Case description (depalletization)
 
 1. A shop-floor worker uses WMS/MES system mobile appplication to scan palette barcode to initiate depalletization process (e.g. [CONTRA](https://contra.itti.com.pl/)) and configure machines accrodingly
@@ -104,7 +109,7 @@ A description of the architecture can be found in the [Architecture documentatio
 
 How to use the component
 
-Information about how to use the Contra 2.0 can be found in the [User & Programmers Manual](docs/usermanual.md).
+Information about how to use the agnet can be found in the [User & Programmers Manual](docs/usermanual.md).
 
 ## Testing
 
