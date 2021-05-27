@@ -73,11 +73,11 @@ A `Dockerfile` is also available for your use - further information can be found
 
 ## API
 
-Information about the API of the component can be found in the [API documentation](https://github.com/itti-pl/depalletization-agent-rose-ap/blob/main/api/docs/api.md)
+Information about the API of the component can be found in the [API documentation](https://github.com/itti-pl/depalletization-agent-rose-ap/blob/main/docs/api.md)
 
 ## Architecture
 
-A description of the architecture can be found in the [Architecture documentation](https://github.com/itti-pl/depalletization-agent-rose-ap/blob/main/api/docs/architecture.md)
+A description of the architecture can be found in the [Architecture documentation](https://github.com/itti-pl/depalletization-agent-rose-ap/blob/main/docs/architecture.md)
 
 ## Usage
 
