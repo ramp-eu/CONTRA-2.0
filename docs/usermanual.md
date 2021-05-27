@@ -33,17 +33,22 @@ and the Orion Context Broker:
 - in `config.js` file you must set **adress** and **port** of *contextBroker* object
 - in `iotagent.js` file you must change name KUKA in `/v2/entities/KUKA/attrs` to name of your entity​​
 ​
-## Data model setup 
-Depalletization IoT Agent data model must be compatible with data model prodived by machine/robot program. Currently, the RS232-IoT-Agent is configured to support custom KUKA KR240 robot program providing:
+## Machine data model setup 
+
+### KUKA example: 
+Depalletization IoT Agent data model must be compatible with data model prodived by machine/robot program. Currently, the Agent is configured to support custom KUKA KR240 robot program providing the following basic data:
 ​
 ​
-* layer thickness (THICK TIM) (must be the same unit as weight of a pack)
-* weight of a pack (HEIGHT PACK)
-* ID of pack (ID PACK)
-* status of robot (ROBOT ON) (1 when robot is running or 0 when robot is off)
-* robot start/end the layer (1 when robot start to move a layer and 0 when it ends)
-​
+* ID of pile (`ID PACK`) e.g. uniqe pallet identifier 
+* layer thickness (`THICK TIM`) (must be the same unit as thickness of a pile)
+* layer witdh (`WIDTH TIM`) (must be the same unit as width of a pile)
+* height of a pile (`HEIGHT`)
+* robot start/end a layer (`WRST`) (1 when robot start to move a layer and 0 when it ends)
+
 Example of HTTP socket reposnse in ASCII format from robot: `ID PACK=19811.THICK TIM=45.WIDHT TIM=600.WRST=1.HEIGHT=200`
+
+### STACKER example
+[tbs]
 
 
 ### Add new entity to Context Broker
