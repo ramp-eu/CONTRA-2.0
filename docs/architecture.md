@@ -1,10 +1,17 @@
 # Concept 
-In order to provide IoT capabliites of leagacy production or warehouse machines supporting only old-fashioned RS-232 serial communication the RS232-IoT-Agent component is provided. 
+In order to provide IoT capabliites of leagacy production or warehouse machines supporting only old-fashioned RS-232 serial communication the depalletization IoT Agentcomponent is provided. 
 ​
-The RS232-IoT-Agent component is a node.js based middleware software solution deployed in between a hardware gateway enbaling serial to ethernet comunnication conversion and other software components (e.g. legacy ERP or WMS systems). 
+
+The Depalletization IoT Agent component is a node.js based middleware software solution deployed in between a hardware gateway enbaling serial to ethernet comunnication conversion and other software components (e.g. legacy ERP or WMS systems). 
 ​
+
 The [NGSIv2](https://fiware.github.io/specifications/ngsiv2/stable/) portocol supoort is provided as a outbound interface of the RS232-IoT-Agent. Therefore, by default RS232-IoT-Agent provides data to the [Orion Context Broker](https://fiware-orion.readthedocs.io/en/master/) acting as a central message borker for other IT systems.
 ​
+<img width="987" alt="Zrzut ekranu 2021-05-26 o 09 11 19" src="https://user-images.githubusercontent.com/46000321/119990198-5841be00-bfc8-11eb-9589-71faeb6fd75f.png">
+
+
+
+
 # Architecture overview 
  The following picture shows the high-level architecture of the solution:
  
