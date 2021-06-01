@@ -1,9 +1,9 @@
 ## Prerequisites
-In order to run the RS232-IoT-Agent you need:
+In order to run the Depalletization IoT Agent you need:
 * node (version >=10.16.0)
 * npm (version 6.9.0)
 ​
-installed on a target server hosting the application. 
+installed on a target server hosting the agent. 
 ​
 ## Installation and running RS232-IoT-Agent
 ​

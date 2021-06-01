@@ -58,13 +58,11 @@ Exmaple of Grafana-based depalletization dashboard for a single machine:
 7. Basic depalletization data is provided by a robot to the agent during process execution 
 8. Agent calculates derivative data based on basic data provided by a machine (calculates estimated time for depalletisation process to complet)
 9. Agent updates depalletization context data to be consumed by a client application (e.g. Grafana dashboard) - data is updated every ~1 minute.
-10. When there is 30% time left for depalletisation process to complete, a notification is pushed to the mobile device carried by the shop-floor worker operating a forklift.
-11. 6. The shop-floor worker receives a notification and delivers another batch of material in the buffer zone of a robot.
+10. When there is X time left for depalletisation process to complete, a notification is generated in mobile app of the shop-floor worker operating a forklift (based on context data).
+11. The shop-floor worker receives a notification and delivers another batch of material in the buffer zone of a robot.
 12. The process repeats from point 1.
 
 ## Install
-
-How to install the component
 
 Information about how to install the Contra 2.0 can be found at the corresponding section of the
 [Installation & Administration Guide](docs/installationguide.md).
@@ -73,11 +71,11 @@ A `Dockerfile` is also available for your use - further information can be found
 
 ## API
 
-Information about the API of the component can be found in the [API documentation](https://github.com/itti-pl/depalletization-agent-rose-ap/blob/main/api/docs/api.md)
+Information about the API of the component can be found in the [API documentation](https://github.com/itti-pl/depalletization-agent-rose-ap/blob/main/docs/api.md)
 
 ## Architecture
 
-A description of the architecture can be found in the [Architecture documentation](https://github.com/itti-pl/depalletization-agent-rose-ap/blob/main/api/docs/architecture.md)
+A description of the architecture can be found in the [Architecture documentation](https://github.com/itti-pl/depalletization-agent-rose-ap/blob/main/docs/architecture.md)
 
 ## Usage
 
