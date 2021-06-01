@@ -21,6 +21,7 @@ This project is part of [DIH^2](http://www.dih-squared.eu/). For more informatio
 -   [API](#api)
 -   [Architecture](#architecture)
 -   [Testing](#testing)
+-   [Contributing](#contributing)
 -   [License](#license)
 
 ## Background
@@ -89,6 +90,12 @@ For performing a tests you have to follow the step below. Tests are written in t
 ```text
 > npm test
 ```
+
+
+## Contributing
+If you'd like to contribute, start by searching through the issues and pull requests to see whether someone else has raised a similar idea or question.
+Before contributing, please check out contribution guidelines
+
 ## License
 
 [MIT](LICENSE) © <TTE>
