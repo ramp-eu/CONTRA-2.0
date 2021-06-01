@@ -59,12 +59,10 @@ Exmaple of Grafana-based depalletization dashboard for a single machine:
 8. Agent calculates derivative data based on basic data provided by a machine (calculates estimated time for depalletisation process to complet)
 9. Agent updates depalletization context data to be consumed by a client application (e.g. Grafana dashboard) - data is updated every ~1 minute.
 10. When there is 30% time left for depalletisation process to complete, a notification is pushed to the mobile device carried by the shop-floor worker operating a forklift.
-11. 6. The shop-floor worker receives a notification and delivers another batch of material in the buffer zone of a robot.
+11. The shop-floor worker receives a notification and delivers another batch of material in the buffer zone of a robot.
 12. The process repeats from point 1.
 
 ## Install
-
-How to install the component
 
 Information about how to install the Contra 2.0 can be found at the corresponding section of the
 [Installation & Administration Guide](docs/installationguide.md).
