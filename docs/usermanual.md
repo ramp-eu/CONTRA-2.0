@@ -33,7 +33,7 @@ and the Orion Context Broker:
 - in `iotagent.js` file you must change name KUKA in `/v2/entities/KUKA/attrs` to name of your entity​​
 ​
 ## Machine data model setup 
-The Depalletization IoT Agent uses the following concepts which are needed to understand the data model:
+The Depalletization IoT Agent uses the following concepts which are needed to understand the data model and depalletization (a process of removing materials from pallets or ordered pile) and palletization (stacking) - a proces of arranging materials on pallets or in an ordered pile - processess.
 
 <img width="682" alt="Zrzut ekranu 2021-06-1 o 15 47 26" src="https://user-images.githubusercontent.com/46000321/120334453-eda6c000-c2f0-11eb-89d0-e2e5303bd402.png">
 
