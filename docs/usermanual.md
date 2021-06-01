@@ -33,6 +33,10 @@ and the Orion Context Broker:
 - in `iotagent.js` file you must change name KUKA in `/v2/entities/KUKA/attrs` to name of your entity​​
 ​
 ## Machine data model setup 
+The Depalletization IoT Agent uses the following concepts which are needed to understand the data model:
+
+<img width="682" alt="Zrzut ekranu 2021-06-1 o 15 47 26" src="https://user-images.githubusercontent.com/46000321/120334453-eda6c000-c2f0-11eb-89d0-e2e5303bd402.png">
+
 
 ### KUKA example: 
 The Depalletization IoT Agent data model must be compatible with data model prodived by machine/robot program. Currently, the agent is configured to support custom KUKA KR240 robot program providing the following basic data:
