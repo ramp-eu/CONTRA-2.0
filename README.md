@@ -58,7 +58,7 @@ Exmaple of Grafana-based depalletization dashboard for a single machine:
 7. Basic depalletization data is provided by a robot to the agent during process execution 
 8. Agent calculates derivative data based on basic data provided by a machine (calculates estimated time for depalletisation process to complet)
 9. Agent updates depalletization context data to be consumed by a client application (e.g. Grafana dashboard) - data is updated every ~1 minute.
-10. When there is 30% time left for depalletisation process to complete, a notification is pushed to the mobile device carried by the shop-floor worker operating a forklift.
+10. When there is X time left for depalletisation process to complete, a notification is generated in mobile app of the shop-floor worker operating a forklift (based on context data).
 11. The shop-floor worker receives a notification and delivers another batch of material in the buffer zone of a robot.
 12. The process repeats from point 1.
 
