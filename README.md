@@ -97,4 +97,4 @@ Before contributing, please check out [Contribution guidelines](docs/contributio
 
 ## License
 
-[MIT](LICENSE) © 2021 ITTI sp. z o.o. 
+© 2021 ITTI sp. z o.o. 
