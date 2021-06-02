@@ -1,7 +1,6 @@
 # Depalletization IoT Agent for RS232 and MODBUS TCP protocol
 ### ROSE-AP component supporting warehousing and production palletization processess
 
-[![License: MIT](https://img.shields.io/github/license/ramp-eu/TTE.project1.svg)](https://opensource.org/licenses/MIT)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/4899/badge)](https://bestpractices.coreinfrastructure.org/projects/4899)
 
 The Depalletization IoT Agent for RS232 and MODBUS TCP protocol is both infrastructural and functional component supporting warehousing and production (de)palletization processess. **It provides data about (de)palletization processss performance automated by machines** (e.g. approx. time remaining to finish a pile, number of remaining pile layers etc.)
