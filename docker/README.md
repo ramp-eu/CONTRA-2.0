@@ -1,13 +1,7 @@
-# Docker-compose
-> Konteneryzacja projektu DIH
+### Docker
 
-Aktualnie, zgodnie z potrzebami został stworzony kontener API wraz z docker-compose, aby była możliwość rozbudowy stacka w przyszłości.
+##How to run
 
-## Instrukcja obsługi
-1. **Przygotowanie do włączenia**<br />
-  - Skopiować zawartość api z wybranego brancha do folderu api/src
-2. **Bazowe komendy**<br />
-  - Włączenie stacka `docker-compose up -d`<br />
-  - Wyłączenie stacka `docker-compose down`<br />
-  - Wyświetlenie logów stacka, wraz z ich śledzeniem `docker-compose logs -f`<br />
-  - Przebudowanie stacka `docker-compose up -d --build --no-cache --force-recreate`
+1. use command `docker-compose up -d`
+2. use command `source context-broker-schema.txt`
+3. stack is working.
