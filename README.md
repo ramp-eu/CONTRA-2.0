@@ -2,7 +2,12 @@
 ### ROSE-AP component supporting warehousing and production palletization processess
 
 [![License: Apache](https://img.shields.io/github/license/itti-pl/depalletization-agent-rose-ap.svg)](https://www.apache.org/licenses/LICENSE-2.0.html#redistribution)
-[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/4899/badge)](https://bestpractices.coreinfrastructure.org/projects/4899)
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/4899/badge)](https://bestpractices.coreinfrastructure.org/projects/4899)  
+[![readthedocs.io](https://readthedocs.org/projects/depalletization-agent-rose-ap/badge/?version=latest)](https://depalletization-agent-rose-ap.readthedocs.io/en/latest/) 
+![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/ittipl/rose-ap-agent/latest)
+
+| :books: [Documentation](https://depalletization-agent-rose-ap.readthedocs.io/en/latest/) | :whale: [DockerHub](https://hub.docker.com/u/ittipl) |
+| --------------------------------------------- | ------------------------------------------------------------- |
 
 The Depalletization IoT Agent for RS232 and MODBUS TCP protocol is both infrastructural and functional component supporting warehousing and production (de)palletization processess. **It provides data about (de)palletization processss performance automated by machines** (e.g. approx. time remaining to finish a pile, number of remaining pile layers etc.)
 
