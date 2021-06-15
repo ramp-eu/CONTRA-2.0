@@ -1,0 +1,17 @@
+site_name: Depalletization agent ROSE-AP
+repo_url: https://github.com/itti-pl/depalletization-agent-rose-ap.git
+site_description: Depalletization agent ROSE-AP Documentation
+docs_dir: docs
+site_dir: html
+use_directory_urls: false
+theme: readthedocs
+nav:
+  - Home: 'README.md'
+  - User & Programmers Manual:
+    - Architecture : 'architecture.md'
+    - API : 'api.md'
+    - User Guide: 'usermanual.md'
+    - Contribution Guidelines: 'contributing.md'
+  - Installation & Administration Manual: 
+    - Installation Guide: 'installationguide.md'
+    - Step by step Guide: 'stepbystepguide.md'
