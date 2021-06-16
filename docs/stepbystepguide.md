@@ -1,20 +1,48 @@
-### Depalletization IoT Agent for RS232 and MODBUS TCP protocol
+# Step-by-step tutorial
 
-#### Step by step guide
+## What is depalletization IoT agent?
+The Depalletization IoT Agent for RS232 and MODBUS TCP protocol is both infrastructural and functional component supporting warehousing and production (de)palletization processess. It provides data about (de)palletization processss performance automated by machines (e.g. approx. time remaining to finish a pile, number of remaining pile layers etc.)
 
-##### step 1. run testbed
+An IoT Agent for RS232 and MODBUS TCP protocol is designed to be a bridge between RS232 ASCII based custom protocol or MODBUS TCP protocol and the NGSI interface of a context broker.
+
+It is based on the IoT Agent Node.js Library. Further general information about the FIWARE IoT Agents framework, its architecture and the common interaction model can be found in the library's GitHub repository.
+
+## Requirements
+In order to run the Depalletization IoT Agent you need:
+
+* Docker (Version TBD)
+* Docker-compose (Version TBD)
+
+## Actors
+* Mock TCP server acting as a depalletization machine/robot?
+* Depalletization IoT agent
+* Orion Context Broker
+
+## Test scenario 
+TBD
+
+## How it works?
+> Agent is establishing a TCP connection with mock server.   
+> Mock server updates depalletization data every 15s.   
+> Mock server is pushing content to the agent through the TCP socket   
+> Agent process data received from the mock server 
+> Agent updates context data in the Orion Context Broker  
+
+## step 1. Run testbed
     cd docker-demo
     docker-compose up -d
 
-##### step 2. Check if Orion context broker is working:
+## step 2. Check if Orion context broker is working:
 
 To check if Orion Context Broker is working, use command `curl 127.0.0.1:1026/version` - if You got response with version, then all is good.
 
-##### step 3. use command `source context-broker-schema.txt` or manually run curls from file `context-broker-schema.txt` 
+## step 3. Initialize context data 
+use command `source context-broker-schema.txt` or manually run curls from file `context-broker-schema.txt` 
 
 This file contains 
 
-##### step 4. to do sanity tests agent+mockserver run `docker-compose logs -f`
+## step 4. to do sanity tests agent+mockserver 
+run `docker-compose logs -f`
 
 1. watch for logs like below, to verify that mockserver is up and working
 
@@ -61,7 +89,7 @@ This file contains
 
 > agent_1       | 0 Broker update is done 2021-06-14T10:00:07.989Z  
 
-##### step 5. Check for updates in orion context broker:
+## step 5. Check for updates in orion context broker:
 
 - curl 127.0.0.1:1026/v2/entities/ - JSON looks like
 ```json
@@ -122,10 +150,4 @@ This file contains
 - You can see update every ~15 seconds in `totalCarrierLayersCompleted` and in `CarrierLayersProgress`
 
 
-
-#### How it works?
-> Agent is establishing a connection with mock server.   
-> Mockserver updates content every 15s.   
-> Mockserver is pushing content to the agent through the TCP socket   
-> Agent works on data from mock server and push it into Orion Context Broker  
  
