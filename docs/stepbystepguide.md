@@ -50,7 +50,7 @@ to check if all the required components are running.
 
 Running the docker-compose stack (without modifying it) creates the following situation:
 
-    ![container structure](/docs/img/container_structure.png)
+![container structure](/docs/img/container_structure.png)
 
 ## step 3. Check if Orion context broker is working:
 
@@ -168,4 +168,4 @@ run `docker-compose logs -f`
 > totalCarrierLayers - total amount of layers  
 > totalCarrierLayersCompleted - finished layers  
 
-- monitor for changes in `totalCarrierLayersCompleted` or in `carrierLayersProgress`
+- monitor for changes in `totalCarrierLayersCompleted` or in `carrierLayersProgress`.
