@@ -50,7 +50,7 @@ to check if all the required components are running.
 
 Running the docker-compose stack (without modifying it) creates the following situation:
 
-![container structure](/docs/img/container_structure.png)
+![container structure](img/container_structure.png)
 
 ## step 3. Check if Orion context broker is working:
 
