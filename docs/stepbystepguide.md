@@ -50,18 +50,18 @@ to check if all the required components are running.
 
 Running the docker-compose stack (without modifying it) creates the following situation:
 
-![container structure](/docs/img/container_structure.png)
+    ![container structure](/docs/img/container_structure.png)
 
-## step 2. Check if Orion context broker is working:
+## step 3. Check if Orion context broker is working:
 
 To check if Orion Context Broker is working, use command `curl 127.0.0.1:1026/version` - if You got response with version, then all is good.
 
-## step 3. Initialize context data 
+## step 4. Initialize context data 
 use command `source context-broker-schema.txt` or manually run curl from file `context-broker-schema.txt` 
 
 This file contains curl with JSON schema for orion context broker
 
-## step 4. to do sanity tests agent+mockserver 
+## step 5. to do sanity tests agent+mockserver 
 run `docker-compose logs -f`
 
 1. watch for logs like below, to verify that mockserver is up and working
@@ -109,7 +109,7 @@ run `docker-compose logs -f`
 
 > agent_1       | 0 Broker update is done 2021-06-14T10:00:07.989Z  
 
-## step 5. Check for updates in orion context broker:
+## step 6. Check for updates in orion context broker:
 
 - curl 127.0.0.1:1026/v2/entities/ - JSON looks like
 ```json
