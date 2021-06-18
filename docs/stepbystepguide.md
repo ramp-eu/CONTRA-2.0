@@ -10,8 +10,8 @@ It is based on the IoT Agent Node.js Library. Further general information about 
 ## Requirements
 In order to run the Depalletization IoT Agent you need:
 
-* Docker (Version TBD)
-* Docker-compose (Version TBD)
+* Docker (Version 20.10.0+)
+* Docker-compose (Version 1.29.0+)
 
 ## Actors
 * Mock TCP server acting as a depalletization machine/robot?
@@ -28,18 +28,38 @@ TBD
 > Agent process data received from the mock server 
 > Agent updates context data in the Orion Context Broker  
 
-## step 1. Run testbed
+## step 1. Clone agent repository
+Open a terminal and move into a folder in which to create the new folder containing the IoT Agent Testbed,
+
+then run
+
+    git clone "https://github.com/itti-pl/depalletization-agent-rose-ap/"
+
+## step 2. Run the testbed
+
+To launch the whole testbed:
+
     cd docker-demo
     docker-compose up -d
+
+After that You can run:
+
+    docker ps
+
+to check if all the required components are running.
+
+Running the docker-compose stack (without modifying it) creates the following situation:
+
+![container structure](/docs/img/container_structure.png)
 
 ## step 2. Check if Orion context broker is working:
 
 To check if Orion Context Broker is working, use command `curl 127.0.0.1:1026/version` - if You got response with version, then all is good.
 
 ## step 3. Initialize context data 
-use command `source context-broker-schema.txt` or manually run curls from file `context-broker-schema.txt` 
+use command `source context-broker-schema.txt` or manually run curl from file `context-broker-schema.txt` 
 
-This file contains 
+This file contains curl with JSON schema for orion context broker
 
 ## step 4. to do sanity tests agent+mockserver 
 run `docker-compose logs -f`
@@ -147,7 +167,5 @@ run `docker-compose logs -f`
 > carrierTimeRemaining - minutes to finish  
 > totalCarrierLayers - total amount of layers  
 > totalCarrierLayersCompleted - finished layers  
-- You can see update every ~15 seconds in `totalCarrierLayersCompleted` and in `CarrierLayersProgress`
 
-
- 
+- monitor for changes in `totalCarrierLayersCompleted` or in `carrierLayersProgress`
