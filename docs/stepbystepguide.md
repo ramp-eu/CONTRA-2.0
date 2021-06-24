@@ -14,7 +14,7 @@ In order to run the Depalletization IoT Agent you need:
 * Docker-compose (Version 1.29.0+)
 
 ## Actors
-* Mock TCP server acting as a depalletization machine/robot?
+* Mock TCP server acting as a depalletization machine/robot
 * Depalletization IoT agent
 * Orion Context Broker
 
@@ -111,7 +111,7 @@ run `docker-compose logs -f`
 
 ## step 6. Check for updates in orion context broker:
 
-- curl 127.0.0.1:1026/v2/entities/ - JSON looks like
+- curl 127.0.0.1:1026/v2/entities/ - JSON should look like
 ```json
 [
   {
