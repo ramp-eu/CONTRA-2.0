@@ -1,11 +1,11 @@
 # Step-by-step tutorial
 
 ## What is depalletization IoT agent?
-The Depalletization IoT Agent for RS232 and MODBUS TCP protocol is both infrastructural and functional component supporting warehousing and production (de)palletization processess. It provides data about (de)palletization processss performance automated by machines (e.g. approx. time remaining to finish a pile, number of remaining pile layers etc.)
+The Depalletization IoT Agent for RS232 and MODBUS TCP protocol is both an infrastructural and functional component supporting warehousing and production (de)palletization processes. It provides data about (de)palletization processes performance automated by machines (e.g. approx. time remaining to finish a pile, number of remaining pile layers etc.)
 
-An IoT Agent for RS232 and MODBUS TCP protocol is designed to be a bridge between RS232 ASCII based custom protocol or MODBUS TCP protocol and the NGSI interface of a context broker.
+An IoT Agent for RS232 and MODBUS TCP protocol is designed to be a bridge between RS232 ASCII-based custom protocol or MODBUS TCP protocol and the NGSI interface of a context broker.
 
-It is based on the IoT Agent Node.js Library. Further general information about the FIWARE IoT Agents framework, its architecture and the common interaction model can be found in the library's GitHub repository.
+It is based on the IoT Agent Node.js Library. Further general information about the FIWARE IoT Agents framework, its architecture, and the common interaction model can be found in the library's GitHub repository.
 
 ## Requirements
 In order to run the Depalletization IoT Agent you need:
@@ -46,7 +46,7 @@ After that You can run:
 
     docker ps
 
-to check if all the required components are running.
+To check if all the required components are running.
 
 Running the docker-compose stack (without modifying it) creates the following situation:
 
@@ -54,34 +54,34 @@ Running the docker-compose stack (without modifying it) creates the following si
 
 ## step 3. Check if Orion context broker is working:
 
-To check if Orion Context Broker is working, use command `curl 127.0.0.1:1026/version` - if You got response with version, then all is good.
+To check if Orion Context Broker is working, use the command `curl 127.0.0.1:1026/version` - if You got a response with the version, then all is good.
 
 ## step 4. Initialize context data 
-use command `source context-broker-schema.txt` or manually run curl from file `context-broker-schema.txt` 
+Use command `source context-broker-schema.txt` or manually run curl from file `context-broker-schema.txt` 
 
 This file contains curl with JSON schema for orion context broker
 
 ## step 5. to do sanity tests agent+mockserver 
 run `docker-compose logs -f`
 
-1. watch for logs like below, to verify that mockserver is up and working
+1. Watch for logs like below, to verify that mock server is up and working
 
 - Logs below informs about:
 
-  - Data is modified in mockserver
+  - Data is modified in mock server
 
   > mockserver_1  | Modified:  ID PACK=19813.THICK TIM=100.WIDHT TIM=600.WRST=1.HEIGHT PACK=600.  
   > mockserver_1  |  
 
-  - Data is sent to agent from mockserver 
+  - Data is sent to the agent from mock server 
 
   > mockserver_1  | sent: ID PACK=19813.THICK TIM=100.WIDHT TIM=600.WRST=1.HEIGHT PACK=600.  
   > mockserver_1  | 
 
-2. watch for logs to verify that agent is working. Lines below shows that agent is working.
+2. Watch for logs to verify that agent is working. The lines below show that the agent is working.
 
 - Logs below informs about: 
-  - data is recieved from server and object is built
+  - data is received from the server and an object is built
 
   > agent_1       | data ID PACK=19813.THICK TIM=100.WIDHT TIM=600.WRST=1.HEIGHT PACK=700.  
   > agent_1       |  2021-06-14T10:00:07.983Z  
@@ -160,7 +160,7 @@ run `docker-compose logs -f`
   }
 ]
 ```
-- Below is json explained
+- Below is JSON explained
 
 > CarrierId - currently used pack  
 > carrierLayersProgress - percentage of progress in this pack  
@@ -168,4 +168,4 @@ run `docker-compose logs -f`
 > totalCarrierLayers - total amount of layers  
 > totalCarrierLayersCompleted - finished layers  
 
-- monitor for changes in `totalCarrierLayersCompleted` or in `carrierLayersProgress`.
+- Monitor for changes in `totalCarrierLayersCompleted` or in `carrierLayersProgress`.
