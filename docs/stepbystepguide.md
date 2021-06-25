@@ -35,6 +35,10 @@ then run
 
     git clone "https://github.com/itti-pl/depalletization-agent-rose-ap/"
 
+When repo is cloned, open folder contains it
+
+    cd depalletization-agent-rose-ap
+
 ## step 2. Run the testbed
 
 To launch the whole testbed:
@@ -70,44 +74,44 @@ run `docker-compose logs -f`
 
   - Data is modified in mock server
 
-  > mockserver_1  | Modified:  ID PACK=19813.THICK TIM=100.WIDHT TIM=600.WRST=1.HEIGHT PACK=600.  
-  > mockserver_1  |  
+  > rose-ap-mockserver  | Modified:  ID PACK=19813.THICK TIM=100.WIDHT TIM=600.WRST=1.HEIGHT PACK=600.  
+  > rose-ap-mockserver  |  
 
   - Data is sent to the agent from mock server 
 
-  > mockserver_1  | sent: ID PACK=19813.THICK TIM=100.WIDHT TIM=600.WRST=1.HEIGHT PACK=600.  
-  > mockserver_1  | 
+  > rose-ap-mockserver  | sent: ID PACK=19813.THICK TIM=100.WIDHT TIM=600.WRST=1.HEIGHT PACK=600.  
+  > rose-ap-mockserver  | 
 
 2. Watch for logs to verify that agent is working. The lines below show that the agent is working.
 
 - Logs below informs about: 
   - data is received from the server and an object is built
 
-  > agent_1       | data ID PACK=19813.THICK TIM=100.WIDHT TIM=600.WRST=1.HEIGHT PACK=700.  
-  > agent_1       |  2021-06-14T10:00:07.983Z  
-  > agent_1       | dataObject { 'ID PACK': '19813',  
-  > agent_1       |   'THICK TIM': '100',  
-  > agent_1       |   'WIDHT TIM': '600',  
-  > agent_1       |   WRST: '1',  
-  > agent_1       |   'HEIGHT PACK': '700' }  
+  > rose-ap-agent       | data ID PACK=19813.THICK TIM=100.WIDHT TIM=600.WRST=1.HEIGHT PACK=700.  
+  > rose-ap-agent       |  2021-06-14T10:00:07.983Z  
+  > rose-ap-agent       | dataObject { 'ID PACK': '19813',  
+  > rose-ap-agent       |   'THICK TIM': '100',  
+  > rose-ap-agent       |   'WIDHT TIM': '600',  
+  > rose-ap-agent       |   WRST: '1',  
+  > rose-ap-agent       |   'HEIGHT PACK': '700' }  
 
   - parameters (time per layers, height from each layer, average time per layer) from this carrier 
 
-  > agent_1       | info.layersTimes [ 20014, 10000, 20011 ] 20011  
-  > agent_1       | info.heights [ 100, 100, 100 ] 2021-06-14T10:00:07.983Z  
-  > agent_1       | averageTime 16 2021-06-14T10:00:07.983Z  
-  > agent_1       | carrierTimeRemaining 1552  
+  > rose-ap-agent       | info.layersTimes [ 20014, 10000, 20011 ] 20011  
+  > rose-ap-agent       | info.heights [ 100, 100, 100 ] 2021-06-14T10:00:07.983Z  
+  > rose-ap-agent       | averageTime 16 2021-06-14T10:00:07.983Z  
+  > rose-ap-agent       | carrierTimeRemaining 1552  
 
   - update context in broker
 
-  > agent_1       | dataUpdate: { totalCarrierLayers: { value: 100, type: 'Number' },  
-  > agent_1       |   totalCarrierLayersCompleted: { value: 3, type: 'Number' },  
-  > agent_1       |   carrierLayersProgress: { value: 3, type: 'Number' },  
-  > agent_1       |   carrierTimeRemaining: { value: 25, type: 'Number' } }  
+  > rose-ap-agent       | dataUpdate: { totalCarrierLayers: { value: 100, type: 'Number' },  
+  > rose-ap-agent       |   totalCarrierLayersCompleted: { value: 3, type: 'Number' },  
+  > rose-ap-agent       |   carrierLayersProgress: { value: 3, type: 'Number' },  
+  > rose-ap-agent       |   carrierTimeRemaining: { value: 25, type: 'Number' } }  
 
   - done update in configured broker
 
-> agent_1       | 0 Broker update is done 2021-06-14T10:00:07.989Z  
+> rose-ap-agent       | 0 Broker update is done 2021-06-14T10:00:07.989Z  
 
 ## step 6. Check for updates in orion context broker:
 
