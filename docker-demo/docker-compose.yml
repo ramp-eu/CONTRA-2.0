@@ -6,7 +6,7 @@ services:
     ports:
       - "1080:1080"
   agent:
-    image: ittipl/rose-ap-agent:1.1
+    image: ittipl/rose-ap-agent
     container_name: rose-ap-agent
   broker_db:
     container_name: rose-ap-broker-db

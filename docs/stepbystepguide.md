@@ -35,6 +35,10 @@ then run
 
     git clone "https://github.com/itti-pl/depalletization-agent-rose-ap/"
 
+When repo is cloned, open folder contains it
+
+    cd depalletization-agent-rose-ap
+
 ## step 2. Run the testbed
 
 To launch the whole testbed:
