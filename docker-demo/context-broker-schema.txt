@@ -1,0 +1,8 @@
+curl http://127.0.0.1:1026/v2/entities -s -S -H 'Content-Type: application/json' -d  @- <<EOF
+{"id":"KUKA:KUKA1","type":"KUKA","active":{"type":"Boolean","value":false,"metadata":{}},"carrierId":{"type":"Number","value":18664,"metadata":{}},"carrierLayersProgress":{"type":"Number","value":-300,"metadata":{}},"carrierTimeRemaining":{"type":"Number","value":0,"metadata":{}},"lastStateChange":{"type":"Number","value":1606967530617,"metadata":{}},"startPaletteProcessingTime":{"type":"Number","value":0,"metadata":{}},"totalCarrierLayers":{"type":"Number","value":-10,"metadata":{}},"totalCarrierLayersCompleted":{"type":"Number","value":30,"metadata":{}}}
+EOF
+
+
+curl http://127.0.0.1:1026/v2/entities -s -S -H 'Content-Type: application/json' -d  @- <<EOF
+{"id":"KUKA","type":"KUKA","active":{"type":"Boolean","value":false,"metadata":{}},"carrierId":{"type":"Number","value":18664,"metadata":{}},"carrierLayersProgress":{"type":"Number","value":-300,"metadata":{}},"carrierTimeRemaining":{"type":"Number","value":0,"metadata":{}},"lastStateChange":{"type":"Number","value":1606967530617,"metadata":{}},"startPaletteProcessingTime":{"type":"Number","value":0,"metadata":{}},"totalCarrierLayers":{"type":"Number","value":-10,"metadata":{}},"totalCarrierLayersCompleted":{"type":"Number","value":30,"metadata":{}}}
+EOF
