@@ -70,10 +70,13 @@ Exmaple of Grafana-based depalletization dashboard for a single machine:
 
 ## Install
 
-Information about how to install the Contra 2.0 can be found at the corresponding section of the
-[Installation & Administration Guide](docs/installationguide.md).
+Information about how to install the IoT depalletization agent can be found at the corresponding section of the
+[Installation & Administration Guide](docs/installationguide.md). 
 
 A `Dockerfile` is also available for your use - further information can be found [here](https://github.com/itti-pl/depalletization-agent-rose-ap/tree/main/docker)
+
+Please visit the [Step-by-step tutorial](https://github.com/itti-pl/depalletization-agent-rose-ap/blob/main/docs/stepbystepguide.md) to setup a demonstration evironment or watch the tutorial video [here](https://www.youtube.com/watch?v=xyFM30i5uGM)
+
 
 ## API
 
