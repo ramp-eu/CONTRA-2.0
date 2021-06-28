@@ -1,0 +1,22 @@
+version: '3'
+services:
+  mockserver:
+    image: ittipl/rose-ap-mockserver
+    container_name: rose-ap-mockserver
+    ports:
+      - "1080:1080"
+  agent:
+    image: ittipl/rose-ap-agent
+    container_name: rose-ap-agent
+  broker_db:
+    container_name: rose-ap-broker-db
+    image: mongo:4.4
+    command: --nojournal
+  broker:
+    container_name: rose-ap-broker
+    image: fiware/orion
+    links:
+      - broker_db
+    ports:
+      - "1026:1026"
+    command: -dbhost broker_db
