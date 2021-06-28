@@ -73,7 +73,7 @@ Exmaple of Grafana-based depalletization dashboard for a single machine:
 Information about how to install the Contra 2.0 can be found at the corresponding section of the
 [Installation & Administration Guide](docs/installationguide.md).
 
-A `Dockerfile` is also available for your use - further information can be found [here](docker/README.md)
+A `Dockerfile` is also available for your use - further information can be found [here](https://github.com/itti-pl/depalletization-agent-rose-ap/tree/main/docker)
 
 ## API
 
