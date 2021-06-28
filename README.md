@@ -23,7 +23,6 @@ This project is part of [DIH^2](http://www.dih-squared.eu/). For more informatio
 -   [Background](#background)
 -   [Install](#install)
 -   [Usage](#usage)
--   [API](#api)
 -   [Architecture](#architecture)
 -   [Testing](#testing)
 -   [Contributing](#contributing)
@@ -77,10 +76,6 @@ A `Dockerfile` is also available for your use - further information can be found
 
 Please visit the [Step-by-step tutorial](https://github.com/itti-pl/depalletization-agent-rose-ap/blob/main/docs/stepbystepguide.md) to setup a demonstration evironment or watch the tutorial video [here](https://www.youtube.com/watch?v=xyFM30i5uGM)
 
-
-## API
-
-Information about the API of the component can be found in the [API documentation](https://github.com/itti-pl/depalletization-agent-rose-ap/blob/main/docs/api.md)
 
 ## Architecture
 
