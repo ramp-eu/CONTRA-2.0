@@ -32,8 +32,7 @@ The following functional components are used to provide IoT capabliites of leaga
 - update function which allows to send data from Iot Agent to Context Broker(s)
 - function allows create new entity in Context Broker
 ​
-# API and interfaces
-​
+
 ## Gettting data from a machine (from hardware gateway)
 The RS232-IoT-Agent supports HTTP, TCP/IP based communication for getting data from a hardware gateway (listening on specific TCP socket)
 ​
