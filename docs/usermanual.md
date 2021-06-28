@@ -47,8 +47,8 @@ The Depalletization IoT Agent data model must be compatible with data model prod
 * height of a pile (`HEIGHT: number`)
 * robot start/end a layer (`WRST: bool`) (1 when robot start to move a layer and 0 when it ends)
 
-#### HTTP socket response (ASCII)
-Example of HTTP socket reposnse in ASCII format from robot: `ID PACK=19811.THICK TIM=45.WIDHT TIM=600.WRST=1.HEIGHT=200`
+#### TCP socket response (ASCII)
+Example of TCP socket reposnse in ASCII format from robot: `ID PACK=19811.THICK TIM=45.WIDHT TIM=600.WRST=1.HEIGHT=200`
 
 The Depalletization IoT Agent uses basic machine data to calculate addtional data about depalletization process performance such as:
 
