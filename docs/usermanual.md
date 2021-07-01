@@ -35,7 +35,7 @@ and the Orion Context Broker:
 ## Machine data model setup 
 The Depalletization IoT Agent uses the following concepts which are needed to understand the data model and depalletization (a process of removing materials from pallets or ordered pile) and palletization (stacking) - a proces of arranging materials on pallets or in an ordered pile - processess.
 
-<img width="682" alt="Zrzut ekranu 2021-06-1 o 15 47 26" src="https://user-images.githubusercontent.com/46000321/120334453-eda6c000-c2f0-11eb-89d0-e2e5303bd402.png">
+<img width="1140" alt="Zrzut ekranu 2021-06-28 o 15 06 41" src="https://user-images.githubusercontent.com/46000321/123649585-296a7200-d82a-11eb-9bdf-b436b6d4e74a.png">
 
 
 ### KUKA example: 
@@ -47,8 +47,8 @@ The Depalletization IoT Agent data model must be compatible with data model prod
 * height of a pile (`HEIGHT: number`)
 * robot start/end a layer (`WRST: bool`) (1 when robot start to move a layer and 0 when it ends)
 
-#### HTTP socket response (ASCII)
-Example of HTTP socket reposnse in ASCII format from robot: `ID PACK=19811.THICK TIM=45.WIDHT TIM=600.WRST=1.HEIGHT=200`
+#### TCP socket response (ASCII)
+Example of TCP socket reposnse in ASCII format from robot: `ID PACK=19811.THICK TIM=45.WIDHT TIM=600.WRST=1.HEIGHT=200`
 
 The Depalletization IoT Agent uses basic machine data to calculate addtional data about depalletization process performance such as:
 

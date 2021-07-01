@@ -6,8 +6,8 @@
 [![readthedocs.io](https://readthedocs.org/projects/depalletization-agent-rose-ap/badge/?version=latest)](https://depalletization-agent-rose-ap.readthedocs.io/en/latest/) 
 ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/ittipl/rose-ap-agent/latest)
 
-| :books: [Documentation](https://depalletization-agent-rose-ap.readthedocs.io/en/latest/) | :whale: [DockerHub](https://hub.docker.com/u/ittipl) |
-| --------------------------------------------- | ------------------------------------------------------------- |
+| :books: [Documentation](https://depalletization-agent-rose-ap.readthedocs.io/en/latest/) | :whale:  [DockerHub](https://hub.docker.com/u/ittipl) | 🎥: [Step-by-step tutorial](https://www.youtube.com/watch?v=xyFM30i5uGM) |
+| --------------------------------------------- | ------------------------------------------------------------- |------------------------------------------------------------- |
 
 The Depalletization IoT Agent for RS232 and MODBUS TCP protocol is both infrastructural and functional component supporting warehousing and production (de)palletization processess. **It provides data about (de)palletization processss performance automated by machines** (e.g. approx. time remaining to finish a pile, number of remaining pile layers etc.)
 
@@ -23,7 +23,6 @@ This project is part of [DIH^2](http://www.dih-squared.eu/). For more informatio
 -   [Background](#background)
 -   [Install](#install)
 -   [Usage](#usage)
--   [API](#api)
 -   [Architecture](#architecture)
 -   [Testing](#testing)
 -   [Contributing](#contributing)
@@ -70,14 +69,13 @@ Exmaple of Grafana-based depalletization dashboard for a single machine:
 
 ## Install
 
-Information about how to install the Contra 2.0 can be found at the corresponding section of the
-[Installation & Administration Guide](docs/installationguide.md).
+Information about how to install the IoT depalletization agent can be found at the corresponding section of the
+[Installation & Administration Guide](docs/installationguide.md). 
 
-A `Dockerfile` is also available for your use - further information can be found [here](docker/README.md)
+A `Dockerfile` is also available for your use - further information can be found [here](https://github.com/itti-pl/depalletization-agent-rose-ap/tree/main/docker)
 
-## API
+Please visit the [Step-by-step tutorial](https://github.com/itti-pl/depalletization-agent-rose-ap/blob/main/docs/stepbystepguide.md) to setup a demonstration evironment or watch the tutorial video [here](https://www.youtube.com/watch?v=xyFM30i5uGM)
 
-Information about the API of the component can be found in the [API documentation](https://github.com/itti-pl/depalletization-agent-rose-ap/blob/main/docs/api.md)
 
 ## Architecture
 
@@ -95,6 +93,7 @@ For performing a tests you have to follow the step below. Tests are written in t
 ```text
 > npm test
 ```
+
 
 
 ## Contributing
